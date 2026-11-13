@@ -1,0 +1,193 @@
+/* ── Features ───────────────────────────────────────── */
+
+      .features {
+        padding: 40px 0 60px;
+        background: var(--color-bg);
+      }
+
+
+.features__title {
+        margin: 0 0 35px;
+        text-align: center;
+        font-family: var(--font-display);
+        font-size: 30px;
+        font-weight: 500;
+        letter-spacing: 0.4px;
+        color: var(--color-ink);
+      }
+
+      .features__list {
+        display: flex;
+        flex-direction: column;
+        gap: 43px;
+        width: 1100px;
+        max-width: calc(100% - 80px);
+        margin: 0 auto;
+      }
+
+      .card {
+        position: relative;
+        width: 100%;
+        height: 360px;
+        border-radius: 4px;
+        overflow: hidden;
+      }
+
+      .card__painting {
+        position: absolute;
+        overflow: hidden;
+      }
+
+      .card__painting img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        pointer-events: none;
+      }
+
+      .card__text {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 331px;
+        letter-spacing: 0;
+      }
+
+      .card__text h3 {
+        margin: 0;
+        font-family: var(--font-mincho);
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 1.447;
+        color: var(--color-ink);
+      }
+
+      .card--5 .card__text h3 {
+        font-family: var(--font-mincho);
+      }
+
+      .card__text h3 .char {
+        display: none;
+        white-space: pre;
+      }
+
+      .card__text h3 .char.is-typed {
+        display: inline-block;
+      }
+
+      .card__text h3 .cursor {
+        display: inline-block;
+        width: 2px;
+        height: 18px;
+        background: currentColor;
+        vertical-align: middle;
+        margin-left: 3px;
+        margin-bottom: 2px;
+        opacity: 0;
+        transition: opacity 180ms ease;
+      }
+
+      .card__text h3.is-active .cursor {
+        opacity: 1;
+      }
+
+      .card__text h3.is-done .cursor {
+        animation: cursor-blink 1s steps(2, end) infinite;
+      }
+
+      @keyframes cursor-blink {
+        0%,
+        49% {
+          opacity: 1;
+        }
+        50%,
+        100% {
+          opacity: 0;
+        }
+      }
+
+      .card__text p {
+        margin: 0;
+        font-family: var(--font-misans);
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.447;
+        color: var(--color-ink-soft);
+      }
+
+      /* Card 1 — 开箱即用顶尖模型 */
+      .card--1 {
+        background: #efebe3;
+      }
+      .card--1 .card__painting {
+        left: 0;
+        top: 0;
+        width: 573px;
+        height: 360px;
+      }
+      .card--1 .card__text {
+        left: 648px;
+        top: 136px;
+      }
+
+      /* Card 2 — 模型 Agent 协同 */
+      .card--2 {
+        background: #f6f1ea;
+      }
+      .card--2 .card__text {
+        left: 129px;
+        top: 130px;
+      }
+      .card--2 .card__painting {
+        left: 527px;
+        top: 0;
+        width: 573px;
+        height: 360px;
+      }
+
+      /* Card 3 — 无限上下文 */
+      .card--3 {
+        background: #efe8e3;
+      }
+      .card--3 .card__painting {
+        left: 0;
+        top: 0;
+        width: 573px;
+        height: 360px;
+      }
+      .card--3 .card__text {
+        left: 645px;
+        top: 114px;
+      }
+
+      /* Card 4 — 自进化系统 */
+      .card--4 {
+        background: #fbf2e9;
+      }
+      .card--4 .card__text {
+        left: 122px;
+        top: 107px;
+      }
+      .card--4 .card__painting {
+        left: 527px;
+        top: 0;
+        width: 573px;
+        height: 360px;
+      }
+
+      /* Card 5 — Compose 模式 */
+      .card--5 {
+        background: #f5ede7;
+      }
+      .card--5 .card__painting {
+        left: 0;
+        top: 0;
+        width: 660px;
+        height: 360px;
+      }
+      .card--5 .card__text {
+        left: 670px;
+        top: 112px;
+      }

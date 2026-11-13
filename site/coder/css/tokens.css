@@ -1,0 +1,46 @@
+      :root {
+        --color-bg: #fcfaf8;
+        --color-ink: #26251e;
+        --color-ink-soft: #504f49;
+        --color-border: #979696;
+        --color-chip-bg: #f3f0ef;
+        --font-sans:
+          "PingFang SC", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, "Microsoft YaHei", sans-serif;
+        --font-mincho: "Huiwen Mincho", "Noto Serif SC", "Songti SC",
+          "STSong", Georgia, serif;
+        --font-display: "Questrial", "Century Gothic", "Avenir Next",
+          "MiSans", sans-serif;
+        --font-misans: "MiSans", "PingFang SC", -apple-system,
+          "Microsoft YaHei", sans-serif;
+        --font-heiti:
+          "Heiti SC", "STHeiti", "PingFang SC", "Microsoft YaHei", sans-serif;
+      }
+
+      /* Huiwen Mincho (汇文明朝体) — subset to just the glyphs this page uses (~111KB).
+         Any glyph not in the subset falls back to Noto Serif SC (loaded online). */
+      @font-face {
+        font-family: "Huiwen Mincho";
+        src: url("/coder/assets/huiwen-mincho-subset.woff2") format("woff2");
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      /* MiSans — subset to just the glyphs this page uses (~38KB), self-hosted. */
+      @font-face {
+        font-family: "MiSans";
+        src: url("/coder/assets/misans-subset.woff2") format("woff2");
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      /* MiSans Medium — tiny subset for the top-nav labels, matching the site header. */
+      @font-face {
+        font-family: "MiSans Medium";
+        src: url("/coder/assets/misans-medium-nav-subset.woff2") format("woff2");
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+      }

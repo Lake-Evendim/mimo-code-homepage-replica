@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MiMo Code</title>
+    <style>
+      /* Rspress 壳自带全局 reset（body margin:0）；等价复刻 */
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+      }
+      iframe {
+        display: block; /* 消除内联基线间隙，iframe 精确铺满 100vh */
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div style="width: 100%; height: 100vh; margin: 0">
+        <iframe src="/coder/index.html?lang=en" style="width: 100%; height: 100%; border: none"></iframe>
+      </div>
+    </section>
+  </body>
+</html>
